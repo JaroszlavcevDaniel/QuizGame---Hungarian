@@ -1,0 +1,367 @@
+body {
+    background-image: url(https://img.freepik.com/free-photo/green-trees-near-lake-mountain-sunset_395237-90.jpg?semt=ais_incoming&w=740&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: blueviolet;
+}
+/*  START MENU  */
+.start-menu {
+    background-image: url(https://images.unsplash.com/photo-1673526759327-54f1f5b27322?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 400px;
+    border-radius: 10%;
+    padding: 40px;
+    color: aliceblue;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    margin-top: 200px;
+    box-shadow: 5px 5px 5px black;
+}
+
+h1 {
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px white;
+    color: blueviolet;
+}
+
+#startButton{
+    justify-self: center !important;
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: brown;
+    color: aliceblue;
+    &:hover {
+        background-color: red;
+    }
+}
+.hover-container {
+    justify-self: center !important;
+    justify-items: center !important;
+    text-justify: center;
+}
+
+.explosive-text {
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
+
+.explosive-text:hover {
+    transform: scale(1.1);
+}
+
+.explosive-text:hover::before,
+.explosive-text:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: burst 0.8s ease-out forwards;
+}
+
+.explosive-text:hover::before {
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.6), transparent);
+    z-index: -1;
+}
+
+.explosive-text:hover::after {
+    background: radial-gradient(circle, rgba(0, 200, 255, 0.6), transparent);
+    z-index: -2;
+}
+
+@keyframes burst {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+    }
+}
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 3s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/*  START MENU END */
+
+/*  FIRST QUESTION  */
+#firstQuestionDiv{
+  display: none;
+}
+.question-menu{
+  
+    background-image: url(https://images.unsplash.com/photo-1673526759327-54f1f5b27322?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 700px;
+    height: 700px;
+    border-radius: 10%;
+    padding: 20px;
+    color: aliceblue;
+    justify-items: center;
+    justify-self: center;
+    top: -160px;
+    position: relative;
+    margin-top: 200px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.imgDiv{
+    justify-content: center;
+    display: flex;
+}
+
+.img {
+    justify-self: center;
+    width: 70%;
+    border-radius: 10%;
+}
+
+.buttonsDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.answerButton{
+    margin: 5px;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: rgb(36, 25, 107);
+    color: aliceblue;
+    &:hover {
+        background-color: rgb(81, 101, 255);
+    }
+}
+
+/* FIRST QUESTION END  */
+#oneNext{
+    display: none;
+}
+.next{
+    margin: 10px;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: rgb(196, 0, 246);
+    color: aliceblue;
+    &:hover {
+        background-color: rgb(216, 109, 255);
+        border: 5px 5px 5px solid red;
+    }
+}
+
+#secondQuestionDiv{
+    display: none;
+}
+
+#TwoNext{
+    display: none;
+}
+
+#thirdQuestionDiv{
+    display: none;
+}
+
+#ThreeNext{
+    display: none;
+}
+
+#fourthQuestionDiv{
+    display: none;
+
+}
+#fourNext{
+    display: none;
+}
+
+#fifthQuestionDiv{
+    display: none;
+}
+#fiveNext{
+    display: none;
+}
+#sixthQuestionDiv{
+    display: none;
+}
+#sixNext{
+    display: none;
+}
+#seventhQuestionDiv{
+    display: none;
+}
+#sevenNext{
+    display: none;
+}
+#eighthQuestionDiv{
+    display: none;
+}
+#eightNext{
+    display: none;
+}
+#ninethQuestionDiv{
+    display: none;
+}
+#nineNext{
+    display: none;
+}
+#tenthQuestionDiv{
+    display: none;
+}
+#tenNext{
+    display: none;
+}
+#resultDiv{
+    display: none;
+}
+#stats{
+    color: yellow;
+    font-size: xx-large;
+}
+#someText{
+    color: yellow;
+    font-size: x-large;
+}
+
+/* #lines{
+    display: none;
+} */
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between; /* Distribute lines evenly */
+}
+
+.line {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  /*background: #ffffff;  /* Line color */
+  overflow: hidden;
+}
+
+.line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: drop 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+/* Different colors for each line's pseudo-element */
+.line:nth-child(1)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF4500 75%, #FF4500 100%);
+  animation-delay: 0.5s;
+}
+
+.line:nth-child(2)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #32CD32 75%, #32CD32 100%);
+  animation-delay: 1s;
+}
+
+.line:nth-child(3)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #1E90FF 75%, #1E90FF 100%);
+  animation-delay: 1.5s;
+}
+
+.line:nth-child(4)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFD700 75%, #FFD700 100%);
+  animation-delay: 2s;
+}
+
+.line:nth-child(5)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #8A2BE2 75%, #8A2BE2 100%);
+  animation-delay: 2.5s;
+}
+
+.line:nth-child(6)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #20B2AA 75%, #20B2AA 100%);
+  animation-delay: 3s;
+}
+
+.line:nth-child(7)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #DC143C 75%, #DC143C 100%);
+  animation-delay: 3.5s;
+}
+
+.line:nth-child(8)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00FA9A 75%, #00FA9A 100%);
+  animation-delay: 4s;
+}
+
+.line:nth-child(9)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF1493 75%, #FF1493 100%);
+  animation-delay: 4.5s;
+}
+
+.line:nth-child(10)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00BFFF 75%, #00BFFF 100%);
+  animation-delay: 5s;
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
